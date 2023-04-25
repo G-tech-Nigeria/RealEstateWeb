@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../src/raleway/Raleway-Regular.ttf') format('truetype'),
+         url('../src/raleway/Raleway-Light.ttf') format('woff'),
+         url('../src/raleway/Raleway-Bold.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+body {
+    min-height: 100vh;
+    max-width: 100%;
+}
+.realestatelogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.hero {
+    margin: 0 25px;
+    min-height: 268px;
+    min-width: 300px;
+    margin-top: 60px;
+    font-weight:  800;
+    color: #1D7D81;
+}
+form {
+    min-width: 340px;
+    min-height: 307px;
+}
+form fieldset {
+    border: none;
+}
+p {
+    margin: 30px 0;
+    position: relative;
+}
+label {
+    display: block;
+}
+input[type="email"], input[type="password"] {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px 16px;
+    background-color:  #F3F3F3;
+    min-width: 340px;
+    height: 50px;
+    margin-top: 20px;
+}
+.eye {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+.password-details {
+    display: flex;
+    justify-content: space-between;
+}
+.password-details a {
+    text-decoration: none;
+    color: #1D7D81;
+}
+.btn {
+    min-width: 340px;
+    background-color: #1D7D81;
+    color: #fff;
+    height: 50px;
+    border-radius: 20px;
+}
