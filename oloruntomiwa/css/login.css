@@ -51,8 +51,20 @@ input[type="email"], input[type="password"] {
     padding: 10px 16px;
     background-color:  #F3F3F3;
     min-width: 340px;
+    max-width: fit-content;
     height: 50px;
     margin-top: 20px;
+}
+.form-check-input:checked {
+    background-color: #1D7D81;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.form-switch .form-check-input {
+    box-shadow: none;
+    border-color: gray;
+    padding: 9px;
 }
 .eye {
     position: absolute;
@@ -62,8 +74,9 @@ input[type="email"], input[type="password"] {
 .password-details {
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
 }
-.password-details a {
+.password-details a, .no-account a {
     text-decoration: none;
     color: #1D7D81;
 }
@@ -73,4 +86,28 @@ input[type="email"], input[type="password"] {
     color: #fff;
     height: 50px;
     border-radius: 20px;
+}
+.login-with {
+    position: relative;
+    border: 1px solid gray;
+    margin: 30px 0;
+}
+.login-with span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.social-media-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.social-media-buttons button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+}
+.hero-image {
+    display: none;
 }
