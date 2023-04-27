@@ -15,6 +15,11 @@
 body {
     min-height: 100vh;
     max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(-90deg, #1d7e8149, rgb(48, 48, 48)), url("../src/img/login-hero-image.jpg");
+    background-position:  center; */
 }
 .realestatelogo {
     display: flex;
@@ -73,8 +78,9 @@ input[type="email"]::placeholder {
 }
 .eye {
     position: absolute;
-    right: 20px;
-    top: 50px;
+    right: 0;
+    top: 70%;
+    transform: translate(-10px, -50%);
 }
 .password-details {
     display: flex;
@@ -84,6 +90,10 @@ input[type="email"]::placeholder {
 .password-details a, .no-account a {
     text-decoration: none;
     color: #1D7D81;
+    transition: all 0.5s ease-in-out;
+}
+.password-details a:hover, .no-account a:hover {
+    color: #368a8ba4;
 }
 .btn {
     min-width: 100%;
@@ -92,6 +102,10 @@ input[type="email"]::placeholder {
     height: 50px;
     border-radius: 20px;
     cursor: pointer;
+}
+.btn:hover {
+    background-color: #36898b;
+    color: #d3d3d3;
 }
 .login-with {
     position: relative;
@@ -117,6 +131,10 @@ input[type="email"]::placeholder {
     border-radius: 10px;
     width: 30%;
     cursor: pointer;
+    transition: 0.5s all;
+}
+.social-media-buttons button:hover {
+    box-shadow: 1px 1px 10px 1px #1D7D81;
 }
 .image {
     min-height: 100%;
