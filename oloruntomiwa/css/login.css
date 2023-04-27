@@ -51,7 +51,7 @@ p {
 label {
     display: block;
 }
-input[type="email"], input[type="password"] {
+input[type="email"], input[type="password"], input[type="text"] {
     border: none;
     outline: none;
     border-radius: 20px;
@@ -75,12 +75,17 @@ input[type="email"]::placeholder {
     box-shadow: none;
     border-color: gray;
     padding: 9px;
+    transition: 0.3s all ease-in-out;
 }
 .eye {
     position: absolute;
     right: 0;
     top: 70%;
     transform: translate(-10px, -50%);
+    border: none;
+}
+#eye-off {
+    display: none;
 }
 .password-details {
     display: flex;
