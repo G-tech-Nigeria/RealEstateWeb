@@ -1,3 +1,5 @@
+// TO SHOWPASSWORD DETAILS
+
 const passwordInput = document.getElementById("password-input");
 const showPasswordBtn = document.getElementById("show-password-btn");
 
